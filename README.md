@@ -4,6 +4,8 @@
 
 ### 关于
 
+参考https://github.com/fangwentong/dotfiles.git
+
 此仓库存放的是一些linux常用的配置文件，
 通过软链接建立与系统配置文件的联系（系统的相关配置文件通过软链接指向该仓库中的文件).
 如 `~/.vimrc` ->  `repo_path/vim/vimrc`.
@@ -22,6 +24,7 @@
     借助 [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) 配置zsh
 
 2. `vim` 配置
+
     参见[fangwentong/vimrc](https://github.com/fangwentong/vimrc)
 
 ###安装
@@ -58,3 +61,5 @@
 ###更多
 
 获取`dotfiles`的更多信息，可以访问[http://dotfiles.github.io/](http://dotfiles.github.io/)
+
+
