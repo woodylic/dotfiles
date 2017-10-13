@@ -19,19 +19,27 @@
 
 ### 配置列表
 
+1. 个人常用脚本
+
+```bash
+cd ~
+ln -s dotfiles/bin bin
+```
+
 1. `zsh`配置
 
 ```bash
 cd ~
 rm .zshrc
-ln -s dotfiles/.zshrc .zshrc 
+ln -s dotfiles/.zshrc .zshrc
 ```
 
-2. 个人常用脚本
+1. `git`配置
 
 ```bash
 cd ~
-ln -s dotfiles/bin bin
+rm .gitconfig
+ln -s dotfiles/.gitconfig .gitconfig
 ```
 
 ### 更多
