@@ -21,45 +21,19 @@
 
 1. `zsh`配置
 
-    借助 [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) 配置zsh
+```bash
+cd ~
+rm .zshrc
+ln -s dotfiles/.zshrc .zshrc 
+```
 
-2. `vim` 配置
+2. 个人常用脚本
 
-    参见[fangwentong/vimrc](https://github.com/fangwentong/vimrc)
+```bash
+cd ~
+ln -s dotfiles/bin bin
+```
 
-###安装
-
-1. clone本仓库到本地
-
-    ```
-    git clone https://github.com/woodylic/dotfiles.git
-    ```
-
-2. 更新子模块
-
-    ```
-    cd dotfiles
-    git submodule update --init
-    ```
-
-3. 开始安装
-
-    搭建基本终端环境，使用
-
-    ```
-    sh install.sh
-    ```
-
-4. 安装完成后，修改部分信息，得到自己的配置
-  - 修改git/gitconfig中的邮箱和用户名
-
-    ```
-    git config --global user.name "你的名字"
-    git config --glabal user.email "你的邮箱"
-    ```
-
-###更多
+### 更多
 
 获取`dotfiles`的更多信息，可以访问[http://dotfiles.github.io/](http://dotfiles.github.io/)
-
-
