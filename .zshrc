@@ -1,12 +1,12 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/opt/openresty/nginx/sbin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/php5/bin:/usr/local/opt/openresty/nginx/sbin:$PATH
 
 # Path to JAVA HOME
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 export PATH=$JAVA_HOME/bin:$PATH
 
-# Homebrew 
+# Homebrew
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 
 # Path to your oh-my-zsh installation.
