@@ -67,6 +67,9 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export KUBERNETES_MASTER=https://172.28.128.4:8443
+export DOCKER_HOST=tcp://vagrant.f8:2375
+export DOCKER_API_VERSION=1.24
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -92,6 +95,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias docker dk
+alias kubectl kc
 
 # add code command to open current path with vs code
 function code {
