@@ -95,8 +95,8 @@ export DOCKER_API_VERSION=1.24
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias docker dk
-alias kubectl kc
+alias dc='docker'
+alias kc='kubectl'
 
 # add code command to open current path with vs code
 function code {
