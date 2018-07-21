@@ -59,7 +59,7 @@ ZSH_THEME="avit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git z zsh-autosuggestions
+  git vagrant z zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -67,6 +67,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export MONO_HOME=
 export KUBERNETES_MASTER=https://172.28.128.4:8443
 export DOCKER_HOST=tcp://vagrant.f8:2375
 export DOCKER_API_VERSION=1.24
