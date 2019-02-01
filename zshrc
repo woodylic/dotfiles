@@ -66,11 +66,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
-export MONO_HOME=
-export KUBERNETES_MASTER=https://172.28.128.4:8443
-export DOCKER_HOST=tcp://vagrant.f8:2375
-export DOCKER_API_VERSION=1.24
+#export KUBERNETES_MASTER=https://172.28.128.4:8443
+#export DOCKER_HOST=tcp://vagrant.f8:2375
+#export DOCKER_API_VERSION=1.24
+export MONO_HOME=/Library/Frameworks/Mono.framework/Versions/5.4.1
+export PATH=$PATH:$MONO_HOME/bin
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -98,6 +98,7 @@ export DOCKER_API_VERSION=1.24
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dc='docker'
 alias kc='kubectl'
+alias tf='terraform'
 
 # add code command to open current path with vs code
 function code {
@@ -110,3 +111,7 @@ function code {
         open -a "Visual Studio Code" "$argPath"
     fi
 }
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/woody.lee/Lab/redis-client-app/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/woody.lee/Lab/redis-client-app/node_modules/tabtab/.completions/electron-forge.zsh
