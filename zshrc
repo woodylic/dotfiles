@@ -59,7 +59,7 @@ ZSH_THEME="avit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git vagrant z zsh-autosuggestions
+  git z zsh-autosuggestions kubectl docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -69,8 +69,7 @@ source $ZSH/oh-my-zsh.sh
 #export KUBERNETES_MASTER=https://172.28.128.4:8443
 #export DOCKER_HOST=tcp://vagrant.f8:2375
 #export DOCKER_API_VERSION=1.24
-export MONO_HOME=/Library/Frameworks/Mono.framework/Versions/5.4.1
-export PATH=$PATH:$MONO_HOME/bin
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -98,6 +97,8 @@ export PATH=$PATH:$MONO_HOME/bin
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dc='docker'
 alias kc='kubectl'
+alias kctx='kubectx'
+alias kns='kubens'
 alias tf='terraform'
 
 # add code command to open current path with vs code
