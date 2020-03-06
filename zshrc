@@ -59,17 +59,12 @@ ZSH_THEME="avit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git z zsh-autosuggestions kubectl docker
+  git zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-#export KUBERNETES_MASTER=https://172.28.128.4:8443
-#export DOCKER_HOST=tcp://vagrant.f8:2375
-#export DOCKER_API_VERSION=1.24
-export PKG_CONFIG_PATH=/usr/lib/pkgconfig
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -100,19 +95,3 @@ alias kc='kubectl'
 alias kctx='kubectx'
 alias kns='kubens'
 alias tf='terraform'
-
-# add code command to open current path with vs code
-function code {
-    if [[ $# = 0 ]]
-    then
-        open -a "Visual Studio Code"
-    else
-        local argPath="$1"
-        [[ $1 = /* ]] && argPath="$1" || argPath="$PWD/${1#./}"
-        open -a "Visual Studio Code" "$argPath"
-    fi
-}
-
-# tabtab source for electron-forge package
-# uninstall by removing these lines or running `tabtab uninstall electron-forge`
-[[ -f /Users/woody.lee/Lab/redis-client-app/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/woody.lee/Lab/redis-client-app/node_modules/tabtab/.completions/electron-forge.zsh
