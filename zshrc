@@ -59,7 +59,15 @@ ZSH_THEME="avit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  aws
+  docker
+  docker-compose
   git 
+  git-auto-fetch
+  iterm2
+  jenv
+  mvn
+  vi-mode
   zsh-autosuggestions
 )
 
