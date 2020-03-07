@@ -64,6 +64,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git 
+  autojump
   vi-mode
   zsh-autosuggestions
   zsh-history-substring-search
@@ -89,6 +90,9 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# terraform
+export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
