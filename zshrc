@@ -16,6 +16,10 @@ ZSH_THEME="avit"
 # An empty array have no effect
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
+# zsh autosuggestion
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -59,14 +63,7 @@ ZSH_THEME="avit"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  aws
-  docker
-  docker-compose
   git 
-  git-auto-fetch
-  iterm2
-  jenv
-  mvn
   vi-mode
   zsh-autosuggestions
 )
