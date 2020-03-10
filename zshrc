@@ -64,7 +64,7 @@ ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git 
-  autojump
+  z
   vi-mode
   zsh-autosuggestions
   zsh-history-substring-search
