@@ -19,6 +19,7 @@ ZSH_THEME="avit"
 # zsh autosuggestion
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
