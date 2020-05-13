@@ -66,18 +66,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 plugins=(
   git 
   z
-  vi-mode
-  aws
-  brew
-  cp
-  docker
-  docker-compose
-  iterm2
-  jenv
-  kubectl
-  npm
-  terraform
-  mvn
   zsh-autosuggestions
   zsh-history-substring-search
   zsh-syntax-highlighting
