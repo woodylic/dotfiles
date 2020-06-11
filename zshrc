@@ -65,6 +65,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git 
+  docker
+  kubectl
   z
   zsh-autosuggestions
   zsh-history-substring-search
@@ -102,8 +104,6 @@ export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias dc='docker'
-alias kc='kubectl'
 alias kctx='kubectx'
 alias kns='kubens'
 alias tf='terraform'
