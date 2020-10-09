@@ -100,6 +100,9 @@ export CHECKPOINT_DISABLE="true"
 # dotnet script
 export PATH=$PATH:$HOME/.dotnet/tools
 
+# sphinx-build
+export PATH=$PATH:/usr/local/Cellar/sphinx-doc/3.2.1/bin
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
